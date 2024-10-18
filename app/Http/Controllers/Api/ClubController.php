@@ -13,7 +13,7 @@ class ClubController extends Controller
     public function index()
     {
         //get clubs
-        $clubs = Club::orderBy('coeffs', 'DESC')->all();
+        $clubs = Club::orderBy('coeffs', 'DESC')->get();
 
         //return collection of clubs as a resource
         return new ClubResource(true, 'List Data Clubs', $clubs);

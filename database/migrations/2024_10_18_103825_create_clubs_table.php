@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('clubs', function (Blueprint $table) {
             $table->id();
-            // $table->renameColumn('id', 'club_id');
             $table->integer('pot_id');
+            $table->integer('league_id')->unsigned()->default(1);
             $table->string('club_name');
             $table->string('club_logo');
             $table->string('stadium_name')->nullable();
             $table->float('coeffs');
+            $table->boolean('is_drawn')->unsigned()->default(0);
             $table->timestamps();
         });
     }

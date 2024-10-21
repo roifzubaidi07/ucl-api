@@ -52,7 +52,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://ucl-fmld4f6ro-m-roifs-projects.vercel.app'),
+
+    'asset_url' => env('ASSET_URL', 'https://ucl-fmld4f6ro-m-roifs-projects.vercel.app/public/'),
 
     /*
     |--------------------------------------------------------------------------

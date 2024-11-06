@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Club;
+use App\Models\Fixture;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ClubResource;
-use Illuminate\Support\Facades\DB;
 
 class ClubController extends Controller
 {

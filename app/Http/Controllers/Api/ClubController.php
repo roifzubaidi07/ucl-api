@@ -55,8 +55,7 @@ class ClubController extends Controller
     public function reset()
     {
         Club::query()->update(['is_drawn' => 0]);
-        $fixtures = Fixture::all();
-        $fixtures ->truncate();
+        DB::table('fixtures')->delete();
             
         return new ClubResource(true, 'Reset Successful', 0);
     }

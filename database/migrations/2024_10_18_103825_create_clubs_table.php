@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('stadium_name')->nullable();
             $table->float('coeffs');
             $table->boolean('is_drawn')->unsigned()->default(0);
+            $table->boolean('is_eligible')->unsigned()->default(1);
             $table->timestamps();
         });
     }
